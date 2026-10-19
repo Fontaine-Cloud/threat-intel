@@ -1,5 +1,5 @@
 # Fontaine Cloud threat intelligence: addresses seen attacking in the last 7 days, known research scanners left out
-# Updated 2026-10-19 18:55 UTC, 5011 addresses
+# Updated 2026-10-19 19:46 UTC, 5011 addresses
 # https://fontaine.host/threat-intelligence/ - CC BY 4.0
 1.0.216.99
 1.9.155.140
