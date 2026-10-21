@@ -1,0 +1,855 @@
+{
+ "window_end": "2026-10-21T00:56:53Z",
+ "totals": {
+  "attacks": 329717,
+  "countries": 78,
+  "detections": 3352,
+  "exploit": 1710,
+  "login": 278786,
+  "networks": 456,
+  "proxy": 4832,
+  "secrets": 44389,
+  "sources": 1731
+ },
+ "attack_types": [
+  {
+   "id": "ssh-login",
+   "name": "SSH password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 190787,
+   "sources": 817
+  },
+  {
+   "id": "telnet-login",
+   "name": "Telnet password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 63847,
+   "sources": 69
+  },
+  {
+   "id": "dotenv",
+   "name": "Environment file (.env)",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 38648,
+   "sources": 39
+  },
+  {
+   "id": "vnc-login",
+   "name": "VNC password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 10713,
+   "sources": 37
+  },
+  {
+   "id": "postgres-login",
+   "name": "PostgreSQL password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 8238,
+   "sources": 17
+  },
+  {
+   "id": "open-proxy",
+   "name": "Open proxy check",
+   "category": "proxy",
+   "cve": null,
+   "attacks": 4832,
+   "sources": 463
+  },
+  {
+   "id": "ftp-login",
+   "name": "FTP password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 2729,
+   "sources": 30
+  },
+  {
+   "id": "mail-login",
+   "name": "Mail server password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 1703,
+   "sources": 17
+  },
+  {
+   "id": "git",
+   "name": "Exposed Git repository",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 1470,
+   "sources": 17
+  },
+  {
+   "id": "config-json",
+   "name": "Application config.json",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 1390,
+   "sources": 72
+  },
+  {
+   "id": "phpinfo",
+   "name": "PHP info page",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 1346,
+   "sources": 25
+  },
+  {
+   "id": "phpunit",
+   "name": "PHPUnit eval-stdin.php",
+   "category": "exploit",
+   "cve": "CVE-2017-9841",
+   "attacks": 931,
+   "sources": 28
+  },
+  {
+   "id": "http-basic",
+   "name": "HTTP Basic password guessing",
+   "category": "login",
+   "cve": null,
+   "attacks": 769,
+   "sources": 18
+  },
+  {
+   "id": "wp-config",
+   "name": "WordPress configuration",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 452,
+   "sources": 6
+  },
+  {
+   "id": "adb",
+   "name": "Open Android Debug Bridge",
+   "category": "exploit",
+   "cve": null,
+   "attacks": 347,
+   "sources": 66
+  },
+  {
+   "id": "compose-file",
+   "name": "Docker Compose file",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 344,
+   "sources": 23
+  },
+  {
+   "id": "aws-credentials",
+   "name": "AWS credentials file",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 344,
+   "sources": 27
+  },
+  {
+   "id": "apache-status",
+   "name": "Apache server status",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 294,
+   "sources": 4
+  },
+  {
+   "id": "dropper",
+   "name": "Malware download and run command",
+   "category": "exploit",
+   "cve": null,
+   "attacks": 212,
+   "sources": 73
+  },
+  {
+   "id": "ssh-keys",
+   "name": "SSH keys",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 76,
+   "sources": 4
+  },
+  {
+   "id": "dlink-hnap",
+   "name": "D-Link HNAP command injection",
+   "category": "exploit",
+   "cve": "CVE-2015-2051",
+   "attacks": 65,
+   "sources": 49
+  },
+  {
+   "id": "thinkphp",
+   "name": "ThinkPHP remote code execution",
+   "category": "exploit",
+   "cve": "CVE-2018-20062",
+   "attacks": 60,
+   "sources": 23
+  },
+  {
+   "id": "apache-traversal",
+   "name": "Apache HTTP Server path traversal",
+   "category": "exploit",
+   "cve": "CVE-2021-41773",
+   "attacks": 54,
+   "sources": 43
+  },
+  {
+   "id": "boa-router",
+   "name": "Boa router admin login",
+   "category": "exploit",
+   "cve": null,
+   "attacks": 24,
+   "sources": 24
+  },
+  {
+   "id": "spring-actuator",
+   "name": "Spring Boot actuator environment",
+   "category": "secrets",
+   "cve": null,
+   "attacks": 9,
+   "sources": 3
+  }
+ ],
+ "ports": [
+  {
+   "port": 22,
+   "attacks": 133298,
+   "sources": 462
+  },
+  {
+   "port": 23,
+   "attacks": 63305,
+   "sources": 68
+  },
+  {
+   "port": 2222,
+   "attacks": 57520,
+   "sources": 442
+  },
+  {
+   "port": 5900,
+   "attacks": 10713,
+   "sources": 37
+  },
+  {
+   "port": 80,
+   "attacks": 8686,
+   "sources": 92
+  },
+  {
+   "port": 8500,
+   "attacks": 5372,
+   "sources": 2
+  },
+  {
+   "port": 5432,
+   "attacks": 3875,
+   "sources": 21
+  },
+  {
+   "port": 9200,
+   "attacks": 3376,
+   "sources": 44
+  },
+  {
+   "port": 6666,
+   "attacks": 3330,
+   "sources": 6
+  },
+  {
+   "port": 2376,
+   "attacks": 3320,
+   "sources": 1
+  },
+  {
+   "port": 8070,
+   "attacks": 3288,
+   "sources": 2
+  },
+  {
+   "port": 21,
+   "attacks": 2729,
+   "sources": 30
+  },
+  {
+   "port": 5555,
+   "attacks": 2548,
+   "sources": 77
+  },
+  {
+   "port": 82,
+   "attacks": 2216,
+   "sources": 29
+  },
+  {
+   "port": 7777,
+   "attacks": 2194,
+   "sources": 7
+  },
+  {
+   "port": 444,
+   "attacks": 2160,
+   "sources": 1
+  },
+  {
+   "port": 446,
+   "attacks": 2160,
+   "sources": 1
+  },
+  {
+   "port": 5000,
+   "attacks": 2108,
+   "sources": 7
+  },
+  {
+   "port": 10250,
+   "attacks": 2064,
+   "sources": 2
+  },
+  {
+   "port": 25,
+   "attacks": 1555,
+   "sources": 3
+  },
+  {
+   "port": 5434,
+   "attacks": 899,
+   "sources": 2
+  },
+  {
+   "port": 443,
+   "attacks": 826,
+   "sources": 16
+  },
+  {
+   "port": 8080,
+   "attacks": 749,
+   "sources": 79
+  },
+  {
+   "port": 5435,
+   "attacks": 681,
+   "sources": 2
+  },
+  {
+   "port": 2323,
+   "attacks": 542,
+   "sources": 5
+  }
+ ],
+ "countries": [
+  {
+   "country": "BG",
+   "attacks": 76932,
+   "sources": 72
+  },
+  {
+   "country": "DE",
+   "attacks": 67965,
+   "sources": 28
+  },
+  {
+   "country": "US",
+   "attacks": 63630,
+   "sources": 754
+  },
+  {
+   "country": "CN",
+   "attacks": 15827,
+   "sources": 163
+  },
+  {
+   "country": "BR",
+   "attacks": 13624,
+   "sources": 25
+  },
+  {
+   "country": "PK",
+   "attacks": 13243,
+   "sources": 60
+  },
+  {
+   "country": "TR",
+   "attacks": 12864,
+   "sources": 5
+  },
+  {
+   "country": "RO",
+   "attacks": 10959,
+   "sources": 28
+  },
+  {
+   "country": "IN",
+   "attacks": 10957,
+   "sources": 31
+  },
+  {
+   "country": "LT",
+   "attacks": 8885,
+   "sources": 4
+  },
+  {
+   "country": "ID",
+   "attacks": 5621,
+   "sources": 14
+  },
+  {
+   "country": "AE",
+   "attacks": 5027,
+   "sources": 12
+  },
+  {
+   "country": "NL",
+   "attacks": 4124,
+   "sources": 7
+  },
+  {
+   "country": "KR",
+   "attacks": 1849,
+   "sources": 54
+  },
+  {
+   "country": "FI",
+   "attacks": 1829,
+   "sources": 1
+  },
+  {
+   "country": "HK",
+   "attacks": 1655,
+   "sources": 71
+  },
+  {
+   "country": "SG",
+   "attacks": 1355,
+   "sources": 37
+  },
+  {
+   "country": "PL",
+   "attacks": 1250,
+   "sources": 5
+  },
+  {
+   "country": "GR",
+   "attacks": 1108,
+   "sources": 2
+  },
+  {
+   "country": "GB",
+   "attacks": 1013,
+   "sources": 21
+  },
+  {
+   "country": "IR",
+   "attacks": 877,
+   "sources": 7
+  },
+  {
+   "country": "BD",
+   "attacks": 819,
+   "sources": 11
+  },
+  {
+   "country": "NG",
+   "attacks": 815,
+   "sources": 25
+  },
+  {
+   "country": "RU",
+   "attacks": 801,
+   "sources": 43
+  },
+  {
+   "country": "FR",
+   "attacks": 609,
+   "sources": 16
+  }
+ ],
+ "networks": [
+  {
+   "asn": 198364,
+   "name": "BANATSYNC-SRL - BANATSYNC SRL, RO",
+   "country": "US",
+   "attacks": 83771,
+   "sources": 63
+  },
+  {
+   "asn": 208137,
+   "name": "FPS12 - Feo Prest SRL, RO",
+   "country": "DE",
+   "attacks": 37460,
+   "sources": 2
+  },
+  {
+   "asn": 8560,
+   "name": "IONOS-AS - IONOS SE, DE",
+   "country": "DE",
+   "attacks": 24109,
+   "sources": 2
+  },
+  {
+   "asn": 14061,
+   "name": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+   "country": "US",
+   "attacks": 16978,
+   "sources": 118
+  },
+  {
+   "asn": 48090,
+   "name": "DMZHOST - TECHOFF SRV LIMITED, GB",
+   "country": "BG",
+   "attacks": 14332,
+   "sources": 11
+  },
+  {
+   "asn": 45773,
+   "name": "HECPERN-AS-PK - PERN AS Content Servie Provider, Islamabad, Pakistan, PK",
+   "country": "PK",
+   "attacks": 12835,
+   "sources": 2
+  },
+  {
+   "asn": 397563,
+   "name": "ADEOXTECH - ADEOX, US",
+   "country": "TR",
+   "attacks": 12781,
+   "sources": 1
+  },
+  {
+   "asn": 22381,
+   "name": "AS22381 - SAMM TECNOLOGIA E TELECOMUNICACOES S.A, BR",
+   "country": "BR",
+   "attacks": 12781,
+   "sources": 1
+  },
+  {
+   "asn": 134905,
+   "name": "IGENNETWORKS-AS-IN - Bharatnet Communications Private Limited, IN",
+   "country": "IN",
+   "attacks": 8366,
+   "sources": 1
+  },
+  {
+   "asn": 211895,
+   "name": "Serverius-Users-as - Serverius Holding B.V., NL",
+   "country": "LT",
+   "attacks": 7387,
+   "sources": 1
+  },
+  {
+   "asn": 135377,
+   "name": "UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK",
+   "country": "SC",
+   "attacks": 7133,
+   "sources": 58
+  },
+  {
+   "asn": 37963,
+   "name": "ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN",
+   "country": "CN",
+   "attacks": 6698,
+   "sources": 10
+  },
+  {
+   "asn": 47890,
+   "name": "UNMANAGED-DEDICATED-SERVERS - UNMANAGED LTD, GB",
+   "country": "RO",
+   "attacks": 6208,
+   "sources": 11
+  },
+  {
+   "asn": 7018,
+   "name": "ATT-INTERNET4 - AT&T Enterprises, LLC, US",
+   "country": "US",
+   "attacks": 5473,
+   "sources": 2
+  },
+  {
+   "asn": 141595,
+   "name": "PRIME-AS-ID - PT Akbar Prima Media, ID",
+   "country": "ID",
+   "attacks": 5417,
+   "sources": 1
+  },
+  {
+   "asn": 197170,
+   "name": "TECHTIES-AS - TechTies Inc., SC",
+   "country": "BG",
+   "attacks": 5412,
+   "sources": 23
+  },
+  {
+   "asn": 204203,
+   "name": "Sepehr-Sabz-DC-TEH - Atrin Information & Communications Technology Company PJS, IR",
+   "country": "AE",
+   "attacks": 4715,
+   "sources": 1
+  },
+  {
+   "asn": 20860,
+   "name": "IOMART-AS - IOMART CLOUD SERVICES LIMITED, GB",
+   "country": "NL",
+   "attacks": 3572,
+   "sources": 1
+  },
+  {
+   "asn": 204428,
+   "name": "SS-Net - SS-Net, BG",
+   "country": "RO",
+   "attacks": 2636,
+   "sources": 3
+  },
+  {
+   "asn": 36352,
+   "name": "AS-COLOCROSSING - HostPapa, US",
+   "country": "US",
+   "attacks": 2598,
+   "sources": 10
+  },
+  {
+   "asn": 4134,
+   "name": "CHINANET-BACKBONE - No.31,Jin-rong Street, CN",
+   "country": "CN",
+   "attacks": 2583,
+   "sources": 33
+  },
+  {
+   "asn": 51167,
+   "name": "CONTABO - Contabo GmbH, DE",
+   "country": "DE",
+   "attacks": 2335,
+   "sources": 5
+  },
+  {
+   "asn": 213790,
+   "name": "LimitedNetwork-AS - Limited Network LTD, GB",
+   "country": "DE",
+   "attacks": 1900,
+   "sources": 1
+  },
+  {
+   "asn": 198020,
+   "name": "DATACRUNCH - Verda Cloud Oy, FI",
+   "country": "FI",
+   "attacks": 1829,
+   "sources": 1
+  },
+  {
+   "asn": 4837,
+   "name": "CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN",
+   "country": "CN",
+   "attacks": 1809,
+   "sources": 20
+  }
+ ],
+ "tools": [
+  {
+   "tool": "Go SSH client",
+   "user_agent": "SSH-2.0-Go",
+   "attacks": 167250,
+   "sources": 506
+  },
+  {
+   "tool": "libssh",
+   "user_agent": "SSH-2.0-libssh2_1.11.1",
+   "attacks": 19364,
+   "sources": 296
+  },
+  {
+   "tool": "PuTTY",
+   "user_agent": "SSH-2.0-PUTTY",
+   "attacks": 3874,
+   "sources": 10
+  },
+  {
+   "tool": "Go HTTP client",
+   "user_agent": "Go-http-client/1.1",
+   "attacks": 1921,
+   "sources": 10
+  },
+  {
+   "tool": "LeakIX",
+   "user_agent": "l9explore/1.2.2",
+   "attacks": 614,
+   "sources": 2
+  },
+  {
+   "tool": "AsyncSSH",
+   "user_agent": "SSH-2.0-AsyncSSH_2.1.0",
+   "attacks": 193,
+   "sources": 1
+  },
+  {
+   "tool": "Mozi-family bot",
+   "user_agent": "Hello, world",
+   "attacks": 28,
+   "sources": 28
+  },
+  {
+   "tool": "Python aiohttp",
+   "user_agent": "Python/3.10 aiohttp/3.14.5",
+   "attacks": 10,
+   "sources": 3
+  },
+  {
+   "tool": "Python urllib",
+   "user_agent": "Python-urllib/3.10",
+   "attacks": 1,
+   "sources": 1
+  }
+ ],
+ "logins": [
+  {
+   "username": "admin",
+   "password": "admin",
+   "attempts": 871,
+   "sources": 244
+  },
+  {
+   "username": "root",
+   "password": "root",
+   "attempts": 728,
+   "sources": 214
+  },
+  {
+   "username": "postgres",
+   "password": "postgres",
+   "attempts": 686,
+   "sources": 107
+  },
+  {
+   "username": "root",
+   "password": "password",
+   "attempts": 555,
+   "sources": 169
+  },
+  {
+   "username": "root",
+   "password": "123456",
+   "attempts": 540,
+   "sources": 167
+  },
+  {
+   "username": "user",
+   "password": "user",
+   "attempts": 495,
+   "sources": 176
+  },
+  {
+   "username": "root",
+   "password": "admin",
+   "attempts": 459,
+   "sources": 177
+  },
+  {
+   "username": "postgres",
+   "password": "password",
+   "attempts": 454,
+   "sources": 63
+  },
+  {
+   "username": "admin",
+   "password": "password",
+   "attempts": 442,
+   "sources": 130
+  },
+  {
+   "username": "root",
+   "password": "1234",
+   "attempts": 428,
+   "sources": 143
+  },
+  {
+   "username": "admin",
+   "password": "admin123",
+   "attempts": 399,
+   "sources": 132
+  },
+  {
+   "username": "admin",
+   "password": "123456",
+   "attempts": 379,
+   "sources": 136
+  },
+  {
+   "username": "test",
+   "password": "test",
+   "attempts": 374,
+   "sources": 115
+  },
+  {
+   "username": "root",
+   "password": "12345678",
+   "attempts": 355,
+   "sources": 131
+  },
+  {
+   "username": "user",
+   "password": "password",
+   "attempts": 354,
+   "sources": 132
+  },
+  {
+   "username": "root",
+   "password": "123456789",
+   "attempts": 327,
+   "sources": 126
+  },
+  {
+   "username": "root",
+   "password": "12345",
+   "attempts": 308,
+   "sources": 112
+  },
+  {
+   "username": "root",
+   "password": "P@ssw0rd",
+   "attempts": 307,
+   "sources": 100
+  },
+  {
+   "username": "root",
+   "password": "123",
+   "attempts": 306,
+   "sources": 115
+  },
+  {
+   "username": "root",
+   "password": "admin123",
+   "attempts": 297,
+   "sources": 102
+  },
+  {
+   "username": "postgres",
+   "password": "123456",
+   "attempts": 286,
+   "sources": 84
+  },
+  {
+   "username": "postgres",
+   "password": "root",
+   "attempts": 267,
+   "sources": 4
+  },
+  {
+   "username": "admin",
+   "password": "1234",
+   "attempts": 256,
+   "sources": 115
+  },
+  {
+   "username": "root",
+   "password": "passw0rd",
+   "attempts": 256,
+   "sources": 78
+  },
+  {
+   "username": "root",
+   "password": "1",
+   "attempts": 254,
+   "sources": 120
+  }
+ ]
+}
